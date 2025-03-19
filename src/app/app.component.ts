@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { HousingLocationComponent } from "./housing-location/housing-location.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeComponent, HousingLocationComponent],
+  imports: [RouterOutlet, HomeComponent, RouterModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'assignment-3-homes-app';
